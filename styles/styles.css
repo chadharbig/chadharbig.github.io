@@ -1,0 +1,390 @@
+/* General Styles */
+
+html,
+body {
+    height: 100% !important;
+}
+
+.background {
+    min-height: 100%;
+    background-color: #181818;
+    padding: 0px;
+}
+
+.wrapper {
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    max-width: 1366px;
+    box-shadow: 50px black;
+}
+
+p {
+    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1.75em;
+    text-transform: uppercase;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+a:link {
+    text-decoration: none;
+    padding: 0;
+}
+
+
+i {
+    font-size: 28px;
+}
+
+
+/* Topnav Styles */
+
+.topnav {
+    padding: 15px 5px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 5px 20px 0px #00000020;
+    background: white;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+.topnav h3 {
+    margin-bottom: 0px;
+}
+
+.topnav a {
+    color: #282828;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+.topnav a:hover {
+    color: #0B80FB;
+    transition-delay: .1s;
+    transition-duration: .3s;
+}
+
+.topnav .nav-links {
+    float: right;
+}
+
+@media (max-width: 767px) {
+    .topnav {
+        padding: 20px 10px;
+    }
+
+    .topnav h3 {
+        font-size: 36px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .topnav .nav-links {
+        float: none;
+        text-align: center;
+        padding-right: 15px;
+    }
+}
+
+/* Button Styles */
+
+.btn {
+    color: #282828;
+    font-weight: 500;
+    border-radius: 0;
+    border: 3px solid #282828;
+    background-color: transparent;
+    height: 44px;
+    width: 110px;
+}
+
+.btn:hover {
+    background-position: left bottom;
+    background-color: #0B80FB;
+    border: 3px solid #282828;
+    transition-timing-function: ease-in;
+    transition-duration: .1s;
+}
+
+.btn:focus,
+.btn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+/* Masthead Styles */
+
+.jumbotron {
+    min-height: 600px;
+    background-size: cover;
+    border-radius: 0;
+    box-shadow: inset 0 -100px 150px -50px #000000;
+    margin: 0;
+}
+
+.jumbotron .vertical-center {
+    min-height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh;
+    /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+}
+
+.jumbotron h4 {
+    color: #fff;
+    text-shadow: 0 0 10px #00000090;
+    line-height: 1.2em;
+}
+
+.jumbotron h1 {
+    color: #fff;
+    text-shadow: 0 0 30px #00000090;
+    line-height: 1.2em;
+}
+
+@media (max-width: 767px) {
+    .jumbotron {
+        margin-top: 168px;
+        min-height: auto;
+    }
+
+    .jumbotron h4 {
+        margin-top: 40px !important;
+    }
+
+    .jumbotron h4,
+    .jumbotron h1 {
+        margin-left: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .jumbotron h4 {
+        font-size: 18px;
+    }
+
+    .jumbotron h1 {
+        font-size: 28px
+    }
+}
+
+/* Summary Styles */
+
+.summary,
+.details {
+    margin: 0;
+    padding: 80px;
+}
+
+@media (max-width: 767px) {
+    .summary,
+    .details {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .summary,
+    .details {
+        padding: 20px;
+    }
+}
+
+.outcomes {
+    border-left: 6px solid #808080;
+    padding: 22px 0 0 40px;
+}
+
+.outcomes h1,
+.outcomes h3 {
+    line-height: 1.2em;
+    margin: 0 0;
+}
+
+.outcomes p {
+    line-height: 1.6em;
+    margin-bottom: 10px;
+}
+
+/* Details Styles */
+
+.details img {
+    max-width: 100%;
+    margin: 70px auto 180px;
+}
+
+.details h5 {
+    text-align: left;
+    justify-content: flex-start !important;
+}
+
+@media (max-width: 767px) {
+    .details img {
+        margin: 25px auto 120px;
+    }
+
+    .details p {}
+}
+
+/* Gallery Image Styles */
+
+.gallery {
+
+    margin-bottom: 80px;
+}
+
+.gallery h2 {
+    margin-top: 40px;
+}
+
+.gallery p {
+    margin-bottom: 40px;
+}
+
+.gallery .mask {
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery h5 {
+    text-align: left;
+    max-width: 75%;
+    color: white;
+    line-height: 1.5em;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-shadow: 0 0 20px #00000080;
+}
+
+.gallery h5:hover {
+    display: block !important;
+}
+
+.gallery img {
+    width: 100%;
+    background-size: cover;
+    transition-delay: 0.5s;
+    transition: all 0.8s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery .col {
+    margin: 15px 0;
+}
+
+.services img {
+    width: 80%;
+}
+
+.work {
+    background-color: white;
+    height: 380px;
+    border-radius: 0;
+    /*box-shadow: 0px 2px 2px #28282840 !important;*/
+}
+
+/* Quote Styles */
+
+.quote {
+    max-width: 900px;
+    padding: 35px;
+    border: 10px solid #282828;
+    margin: 0 auto 100px;
+    box-shadow: 20px 20px #808080;
+}
+
+.quote p,
+.quote h5 {
+    color: #282828;
+}
+
+.quote p {
+    font-family: 'Bitter', 'Garamond', 'serif';
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .quote {
+        margin: 0 30px 80px;
+        padding: 20px;
+    }
+
+    .quote p {
+        font-size: 24px;
+        line-height: 1.5em;
+    }
+
+    .quote h5 {
+        font-size: 18px;
+    }
+}
+
+
+/* Next Proj Styles */
+
+.next {
+    color: white;
+    padding: 40px 0;
+    margin: 0;
+    background: linear-gradient(to right, #0B80FB 50%, #282828 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .4s ease-out;
+}
+
+.next:hover {
+    background-position: left bottom;
+    background-color: #0B80FB;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+}
+
+.next p {
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+    .next p,
+    .next h3 {
+        margin: 0 50px;
+        line-height: 1.3em;
+    }
+
+    .next h3,
+    .next i {
+        font-size: 24px;
+    }
+}
+
+a .next:hover {
+    color: #fff;
+    background-color: #0B80FB;
+    transition-timing-function: ease-in;
+    transition-duration: .2s;
+}
