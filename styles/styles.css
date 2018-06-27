@@ -273,13 +273,7 @@ img {
 /* Gallery Styles */
 
 .gallery {
-    padding: 140px 30px;
-}
-
-@media (max-width: 767px) {
-    .gallery {
-        padding: 180px 0px;
-    }
+    padding: 145px 30px 100px;
 }
 
 .gallery p {
@@ -294,8 +288,8 @@ img {
 }
 
 .mask {
-    margin-top: 80px;
-    margin-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 15px;
     width: 100%;
     overflow: hidden;
 }
@@ -313,6 +307,22 @@ img {
     transform: scale(1.1);
     overflow: hidden;
 }
+
+@media (max-width: 767px) {
+    .gallery {
+        padding: 170px 0px 60px;
+    }
+
+    .gallery h4 {
+        padding-left: 20px;
+        line-height: 1.5em;
+    }
+
+    .mask {
+        margin-top: 40px;
+    }
+}
+
 
 /* Quote Styles */
 
