@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
-    max-width: 1366px;
+    max-width: 1400px;
     box-shadow: 50px black;
 }
 
@@ -34,7 +34,7 @@ h5,
 h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    line-height: 1.75em;
+    line-height: 1.5em;
     text-transform: uppercase;
 }
 
@@ -57,18 +57,19 @@ img {
     background-color: white;
 }
 
+.separator {
+    margin: 140px auto;
+}
+
 
 /* Topnav Styles */
 
 .topnav {
-    padding: 15px 5px;
+    padding: 15px 10px;
     align-items: center;
-    display: flex;
-    box-shadow: 0 5px 20px 0px #00000020;
     background: white;
     margin: 0;
     top: 0;
-    width: 100%;
 }
 
 .topnav h3 {
@@ -124,11 +125,15 @@ img {
     border-radius: 0;
     border: 3px solid;
     background-color: transparent;
-    height: 44px;
-    width: 110px;
     outline: none;
     box-shadow: none;
 }
+
+.btn-small {
+    height: 44px;
+    width: 110px;
+}
+
 
 .btn:hover {
     color: white;
@@ -323,6 +328,37 @@ img {
     }
 }
 
+/* Services Styles */
+
+.headline {
+    margin: 120px 0;
+}
+
+.headline h1 {
+    font-size: 52px;
+}
+
+.headline p {
+    font-size: 24px;
+    line-height: 2em;
+    margin: 30px 0 0;
+}
+
+.services img {
+    max-width: 100px;
+    margin: 0;
+}
+
+.services p {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 767px) {
+    .services {
+        padding: 170px 0px 60px;
+    }
+}
+
 
 /* Quote Styles */
 
@@ -388,7 +424,8 @@ img {
 @media (max-width: 768px) {
     .next p,
     .next h3 {
-        margin: 0 50px;
+        margin: 0 50px !important;
+        padding: 0;
         line-height: 1.3em;
     }
 
@@ -403,4 +440,22 @@ a .next:hover {
     background-color: #0B80FB;
     transition-timing-function: ease-in;
     transition-duration: .2s;
+}
+
+.footer {
+    color: white;
+    padding: 40px 0;
+    margin: 0;
+    background: #282828;
+    transition: all .4s ease-out;
+}
+
+.footer:hover {
+    color: #fff;
+    background-color: #0B80FB;
+    transition-duration: .2s;
+}
+
+.footer h3 {
+    margin: 0;
 }
