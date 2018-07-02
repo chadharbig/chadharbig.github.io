@@ -327,16 +327,10 @@ img {
 }
 
 @media (max-width: 767px) {
-    .details {
-        padding: 0;
+    .details,
+    .summary {
+        padding: 40px 0;
     }
-
-    .details h3,
-    h4,
-    h5 {
-        margin-left: 0;
-    }
-
     .details img {
         margin: 25px auto 120px;
     }
@@ -345,7 +339,7 @@ img {
 /* Gallery Styles */
 
 .gallery {
-    padding: 145px 30px 100px;
+    padding: 0px 30px 100px;
 }
 
 .gallery p {
@@ -412,7 +406,7 @@ img {
 }
 
 .services img {
-    max-width: 100px;
+    max-width: 120px;
     margin: 0;
 }
 
@@ -450,17 +444,17 @@ img {
 
 @media (max-width: 768px) {
     .quote {
-        margin: 0 30px 80px;
-        padding: 20px;
+        margin: 0 20px 70px;
+        padding: 20px 15px;
     }
 
     .quote p {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 1.5em;
     }
 
     .quote h5 {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -489,16 +483,23 @@ img {
 }
 
 @media (max-width: 768px) {
-    .next p,
-    .next h3 {
-        margin: 0 50px !important;
-        padding: 0;
-        line-height: 1.3em;
+    .next {
+        padding: 20px;
     }
 
-    .next h3,
-    .next i {
+    .next p,
+    .next h3 {
+        margin: 0 !important;
+        padding: 0;
+        line-height: 1.4em;
+    }
+
+    .next h3 {
         font-size: 24px;
+    }
+
+    .next i {
+        display: none;
     }
 }
 
