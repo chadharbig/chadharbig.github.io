@@ -257,7 +257,7 @@ img {
     }
 
     .jumbotron h4 {
-        margin-top: 40px !important;
+        margin-top: 10px !important;
     }
 
     .jumbotron h4,
@@ -328,7 +328,8 @@ img {
 
 @media (max-width: 767px) {
     .details,
-    .summary {
+    .summary,
+    .gallery {
         padding: 40px 0;
     }
     .details img {
@@ -500,33 +501,6 @@ img {
     margin-bottom: 0 !important;
 }
 
-@media (max-width: 768px) {
-    .next,
-    .footer {
-        padding: 20px;
-        margin: 0px;
-    }
-
-    .next p,
-    .next h3,
-    .footer p,
-    .footer h3 {
-        margin: 0 !important;
-        padding: 0;
-        line-height: 1.4em;
-    }
-
-    .next h3,
-    .footer h3 {
-        font-size: 24px;
-    }
-
-    .next i,
-    .footer i {
-        display: none;
-    }
-}
-
 a .next:hover {
     color: #fff;
     background-color: #0B80FB;
@@ -550,4 +524,30 @@ a .next:hover {
 
 .footer h3 {
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .next,
+    .footer {
+        padding: 20px;
+    }
+
+    .next p,
+    .next h3,
+    .footer p,
+    .footer h3 {
+        margin: 0 !important;
+        padding: 0;
+        line-height: 1.4em;
+    }
+
+    .next h3,
+    .footer h3 {
+        font-size: 24px;
+    }
+
+    .next i,
+    .footer i {
+        display: none;
+    }
 }
