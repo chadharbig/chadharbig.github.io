@@ -377,7 +377,7 @@ img {
 
 @media (max-width: 767px) {
     .gallery {
-        padding: 170px 0px 60px;
+        padding: 0px 0px 120px;
     }
 
     .gallery h4 {
