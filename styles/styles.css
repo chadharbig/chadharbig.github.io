@@ -477,6 +477,13 @@ img {
     }
 }
 
+/* Clients Styles */
+
+.clients {
+    background-color: #F9f9f9;
+    padding: 50px;
+    margin: 0;
+}
 
 /* Next Proj Styles */
 
@@ -529,7 +536,8 @@ a .next:hover {
 @media (max-width: 768px) {
     .next,
     .footer {
-        padding: 20px;
+        padding: 40px 20px;
+        margin: 0px !important;
     }
 
     .next p,
