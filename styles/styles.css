@@ -53,8 +53,19 @@ i {
     font-size: 28px;
 }
 
+/* Image Styling */
+
 img {
     background-color: white;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
 }
 
 .separator {

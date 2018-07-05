@@ -18,6 +18,21 @@
 
 
     <title>Chad Harbig | Product Consultant | UX Architect</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26487112-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-26487112-2');
+
+    </script>
+
     <style>
         .quote {
             margin: 140px auto 80px;
@@ -28,7 +43,10 @@
             transition-timing-function: ease-in;
             transition-duration: .1s;
         }
+
     </style>
+
+
 </head>
 
 <body>
@@ -57,32 +75,32 @@
                 </div>
                 <div class="row services justify-content-md-center text-center">
                     <div class="col-sm-6">
-                        <img src="/images/icons/leader.png">
+                        <img data-src="/images/icons/leader.png">
                         <h5>Team Leadership</h5>
                         <p>Cross-functional team leadership is my specialty.<br>I will help you set objectives and KPIs for your internal and external product resources, and lead them to deliver exceptional results on-time and on-budget.</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/images/icons/strategy.png">
+                        <img data-src="/images/icons/strategy.png">
                         <h5>Product Management</h5>
                         <p>Have a product idea, but don’t know how to make it a reality?<br>I will work with you to set a product vision and strategy, and translate that vision into a Lean product roadmap that delivers real value for your customers and your business.</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/images/icons/design.png">
+                        <img data-src="/images/icons/design.png">
                         <h5>Experience Design</h5>
                         <p>Looking for a product experience that your customers will love?<br>I will develop consistent UI standards for your web, mobile, or desktop product, and deliver a clean user experience that delights your users and keeps them coming back for more.</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/images/icons/research.png">
+                        <img data-src="/images/icons/research.png">
                         <h5>Product Research</h5>
                         <p>If your product doesn’t solve a real problem, it is likely to fall flat.<br>I will help you identify the top pain-points that your customers will pay to solve, or validate the desirability, viability, and feasibility of your existing product idea.</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/images/icons/architecture.png">
+                        <img data-src="/images/icons/architecture.png">
                         <h5>Info Architecture</h5>
                         <p>Odds are, your product is more complicated than it needs to be. I will evaluate the architecture of your existing website, app, or desktop software, and optimize the flow of information to make it easier for users to accomplish their goals.</p>
                     </div>
                     <div class="col-sm-6">
-                        <img src="/images/icons/training.png">
+                        <img data-src="/images/icons/training.png">
                         <h5>UX Training</h5>
                         <p>Want to level-up your current product resources?<br>I will train your team on all aspects of user experience; from ideation through research, experience mapping, UX design, prototyping, usability testing, and product delivery.</p>
                     </div>
@@ -102,6 +120,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+        [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+            img.setAttribute('src', img.getAttribute('data-src'));
+            img.onload = function() {
+                img.removeAttribute('data-src');
+            };
+        });
+
+    </script>
 </body>
 
 </html>

@@ -19,7 +19,18 @@
 
     <title>Chad Harbig | inSSIDer Tech</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26487112-2"></script>
     <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-26487112-2');
+
     </script>
 
     <style>
@@ -47,6 +58,7 @@
                 margin-left: 20px;
             }
         }
+
     </style>
 </head>
 
@@ -103,7 +115,7 @@
                     <p>Interviews and ride-alongs provided us with a deep understanding of the challenges that ISPs face in providing stable Wi-Fi service, and how these issues emerge for all impacted stakeholders.</p>
                 </div>
                 <div class="col-sm-12 col-md-10 offset-md-1">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_stakeholder.svg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_stakeholder.svg">
                 </div>
 
                 <div class="col-sm-12 col-lg-3">
@@ -113,7 +125,7 @@
                     <p>I led a work session to map the common service lifecycle for ISPs providing network service to residential customers, based on our experience in the field. Common jobs, pains, and solutions were mapped at each stage, along with potential interventions.</p>
                 </div>
                 <div class="col-sm-12">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_whiteboard1.jpg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_whiteboard1.jpg">
                 </div>
 
                 <div class="col-sm-12 col-lg-3">
@@ -123,7 +135,7 @@
                     <p>Specific use-cases were mapped to help us identify the most impactful pain-points for potential users of our solution.</p>
                 </div>
                 <div class="col-sm-12">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_workflow.svg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_workflow.svg">
                 </div>
 
                 <div class="col-sm-12 col-lg-3">
@@ -133,7 +145,7 @@
                     <p>Storyboards were used to work through UX and UI considerations in preparation for development of a testable prototype.</p>
                 </div>
                 <div class="col-sm-12">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_whiteboard2.jpg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_whiteboard2.jpg">
                 </div>
 
                 <div class="col-sm-12 col-lg-3">
@@ -143,7 +155,7 @@
                     <p>Hi-fidelity Sketch mockups and prototypes were used to gather feedback from internal decision-makers and potential customers. Once the desirability and viability of the concept was validated, these same artifacts were used to communicate design intent to engineers.</p>
                 </div>
                 <div class="col-sm-12">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_screens.jpg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_screens.jpg">
                 </div>
 
                 <div class="col-sm-12 col-lg-3">
@@ -153,7 +165,7 @@
                     <p>Straight-forward visualizations and an intuitive color scheme were used to take any guesswork out of the process of troubleshooting residential Wi-Fi networks.</p>
                 </div>
                 <div class="col-sm-12">
-                    <img class="img-responsive" src="/images/projects/inssider/inssider_visuals.jpg">
+                    <img class="img-responsive" data-src="/images/projects/inssider/inssider_visuals.jpg">
                 </div>
                 <div class="row frame quote justify-content-center">
                     <div class="col-sm-12">
@@ -182,6 +194,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+        [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+            img.setAttribute('src', img.getAttribute('data-src'));
+            img.onload = function() {
+                img.removeAttribute('data-src');
+            };
+        });
+
+    </script>
 </body>
 
 </html>

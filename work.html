@@ -21,10 +21,25 @@
 
     <title>Chad Harbig | Bodybuilding.com</title>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-26487112-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-26487112-2');
+
+    </script>
+
     <style>
         .headline {
             margin: 80px auto !important;
         }
+
     </style>
 </head>
 
@@ -55,7 +70,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/inssider.html">
                         <div class="mask">
-                            <img src="/images/projects/inssider/inssider_thumb.jpg">
+                            <img data-src="/images/projects/inssider/inssider_thumb.jpg">
                         </div>
                         <h4>inssider tech</h4>
                     </a>
@@ -63,7 +78,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/bodybuilding.html">
                         <div class="mask">
-                            <img src="/images/projects/bbcom/bbcom_thumb.jpg">
+                            <img data-src="/images/projects/bbcom/bbcom_thumb.jpg">
                         </div>
                         <h4>bodybuilding.com</h4>
                     </a>
@@ -71,7 +86,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/metageek.html">
                         <div class="mask">
-                            <img src="/images/projects/metageek/metageek_thumb.jpg">
+                            <img data-src="/images/projects/metageek/metageek_thumb.jpg">
                         </div>
                         <h4>metageek.com</h4>
                     </a>
@@ -79,7 +94,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/gigmob.html">
                         <div class="mask">
-                            <img src="/images/projects/gigmob/gigmob_thumb.jpg">
+                            <img data-src="/images/projects/gigmob/gigmob_thumb.jpg">
                         </div>
                         <h4>gigmob</h4>
                     </a>
@@ -87,7 +102,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/idearoom.html">
                         <div class="mask">
-                            <img src="/images/projects/idearoom/idearoom_thumb.jpg">
+                            <img data-src="/images/projects/idearoom/idearoom_thumb.jpg">
                         </div>
                         <h4>idearoom</h4>
                     </a>
@@ -95,7 +110,7 @@
                 <div class="col-sm-12 col-md-6">
                     <a href="/work/tvcc.html">
                         <div class="mask">
-                            <img src="/images/projects/tvcc/tvcc_thumb.jpg">
+                            <img data-src="/images/projects/tvcc/tvcc_thumb.jpg">
                         </div>
                         <h4>Treasure Valley Community College</h4>
                     </a>
@@ -119,6 +134,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
+    <script>
+        [].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+            img.setAttribute('src', img.getAttribute('data-src'));
+            img.onload = function() {
+                img.removeAttribute('data-src');
+            };
+        });
+
+    </script>
 </body>
 
 </html>
