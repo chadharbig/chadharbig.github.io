@@ -130,7 +130,7 @@ img[data-src] {
 /* Topnav Styles */
 
 .topnav {
-    padding: 15px 10px;
+    padding: 50px 50px;
     align-items: center;
     background: white;
     margin: 0;
@@ -160,7 +160,7 @@ img[data-src] {
 @media (max-width: 767px) {
     .topnav {
         background-color: #282828;
-        padding: 5px 0 20px;
+        padding: 20px 0 20px;
     }
 
     .topnav a {
@@ -406,7 +406,7 @@ img[data-src] {
 /* Headline Styles */
 
 .headline {
-    margin: 225px 100px 150px;
+    margin: 150px 100px 150px;
 }
 
 .headline h1 {
