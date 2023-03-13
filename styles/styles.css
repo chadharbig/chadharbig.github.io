@@ -82,8 +82,6 @@ i {
 
 img {
     background-color: white;
-    opacity: 1;
-    transition: opacity 0.3s;
 }
 
 img[data-src] {
@@ -96,6 +94,30 @@ img[data-src] {
 
 .headline {
     padding:  120px 0;
+}
+
+@media (max-width: 767px) {
+    .headline {
+        padding:  80px 0 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 400;
+        max-width:  1000px;
+        margin: 0 auto;
+        padding:  0 30px;
+    }
+
+    .services h3,
+    .gallery h3 {
+        margin-top:  30px;
+    }
+
+    .gallery {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -202,7 +224,6 @@ img[data-src] {
     .topnav .nav-links {
         float: none;
         text-align: center;
-        padding-right: 15px;
     }
 }
 
@@ -406,7 +427,7 @@ img[data-src] {
     width: 100%;
     height: 100%;
     transition: all .3s ease-in-out;
-    background-color: #808080;
+    background-color: white;
     background-position: center;
     background-size: cover;
 }
@@ -439,9 +460,6 @@ img[data-src] {
 
 
 @media (max-width: 767px) {
-    .headline {
-        margin: 60px 0
-    }
 
     .headline h1 {
         font-size: 34px;
