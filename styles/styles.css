@@ -416,9 +416,14 @@ img[data-src] {
     margin-left: 30px;
 }
 
+.gallery h4 {
+    padding: 15px 0 20px 5%;
+}
+
 .mask {
-    margin-bottom: 15px;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -438,17 +443,13 @@ img[data-src] {
 
 @media (max-width: 767px) {
     .gallery {
-        padding: 0px 0px 120px;
+        padding: 0px 0px 40px;
     }
 
     .gallery h4 {
-        padding-left: 20px;
         line-height: 1.5em;
     }
 
-    .mask {
-        margin-top: 40px;
-    }
 }
 
 /* Headline Styles */
