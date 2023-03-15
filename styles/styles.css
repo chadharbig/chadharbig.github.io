@@ -250,6 +250,11 @@ img[data-src] {
     margin: 80px auto 120px;
 }
 
+.worklink {
+    margin-right:  20px;
+
+}
+
 
 .btn:hover {
     color: white;
