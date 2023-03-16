@@ -190,7 +190,7 @@ img[data-src] {
 
 .topnav a {
     color: #282828;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .topnav a:hover {
@@ -231,13 +231,10 @@ img[data-src] {
 .btn,
 .btn:focus,
 .btn:active {
-    color: #282828;
     font-weight: 500;
     border-radius: 0;
     border: 3px solid;
-    background-color: transparent;
-    outline: none;
-    box-shadow: none;
+    background-color: #fff;
 }
 
 .btn-small {
@@ -252,7 +249,6 @@ img[data-src] {
 
 .worklink {
     margin-right:  20px;
-
 }
 
 
@@ -402,7 +398,7 @@ img[data-src] {
     .details,
     .summary,
     .gallery {
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
     .details img {
         margin: 25px auto 120px;
@@ -612,5 +608,14 @@ a .next:hover {
     .next i,
     .footer i {
         display: none;
+    }
+
+    .next {
+    background: #282828;
+    }
+
+    .next:hover {
+     color: #fff;
+    background-color: #0B80FB;
     }
 }
