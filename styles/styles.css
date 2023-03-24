@@ -268,11 +268,18 @@ img[data-src] {
 }
 
 @media (max-width: 767px) {
-    .btn,
-    .btn:focus,
-    .btn:active {
-        color: white;
-    }
+    
+
+.btn,
+.btn:focus,
+.btn:active {
+    color:  white;
+    font-weight: 500;
+    border-radius: 0;
+    border: 3px solid;
+    background-color: #0B80FB;
+    border-color: white;
+}
 
     .btn:hover {
         border-color: white;
