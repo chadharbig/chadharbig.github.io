@@ -190,8 +190,17 @@ img[data-src] {
 
 .topnav a {
     color: #282828;
-    font-weight: 700;
 }
+
+.topnav #home {
+    font-weight: 500;
+}
+
+.topnav #worklink {
+    font-weight:  600;
+    padding-right:  20px;
+}
+
 
 .topnav a:hover {
     color: #0B80FB;
@@ -247,7 +256,7 @@ img[data-src] {
     margin: 80px auto 120px;
 }
 
-.worklink {
+.topnav a #worklink {
     margin-right:  20px;
 }
 
