@@ -410,6 +410,10 @@ img[data-src] {
     justify-content: flex-start !important;
 }
 
+.outcomes h5 {
+    margin-bottom:  10px;
+}
+
 @media (max-width: 767px) {
     .details,
     .summary,
